@@ -4,6 +4,7 @@ import pro1 from "../assets/images/pro1.svg";
 import elder from "../assets/images/elder.jpg";
 import hospital from "../assets/images/hospital.png";
 import side from "../assets/images/side.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -24,12 +25,12 @@ const Home = () => {
           Give a helping hand to people who NEED it!
         </p>
         <div className="btn mt-8">
-          <a
+          <Link
             href="/donate"
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
+            className="bg-blue-500 !text-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
           >
             GIVE NOW
-          </a>
+          </Link>
         </div>
       </div>
 
