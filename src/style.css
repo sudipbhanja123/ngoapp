@@ -1,0 +1,165 @@
+body
+{
+    background-color: black;
+}
+/*------------------------------------------------MAIN----------------------------------------*/
+.main
+{
+    background-image: url("./assets/images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: white;
+    
+    /* background-attachment: fixed; */
+}
+
+/* .product
+{
+    background-image: url("images/poor.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+} */
+
+.pro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /* .contact_container
+{
+    padding: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("images/about_back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 180vh;
+    margin-top:-1.5%;
+    color: white;
+}*/
+.contact_container{
+    color: white;
+    background-position: center;
+}
+.contact_container h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 33px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+} 
+
+
+/*------------------------------------------------MAIN_ABOUT----------------------------------------*/
+.main_about
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("./assets/images/about.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    margin-top:0.3%;
+}
+.main_about .main_content_about h2
+{
+    color: white;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding:20%;
+}
+.main_about{
+    background-image: url("assets/images/about.jpg");
+}
+footer{
+    background-image: url("images/about_back.jpg");
+}
+footer a{
+    color: white;
+}
+footer h3{
+    color: white;
+}
+footer p{
+    color: white;
+}
+footer i{
+    color: white;
+}
+#main h2{
+    color: white;
+}
+#main span{
+    color: white;
+}
+#main p{
+    color: white;
+}
+.product .product_container .item:hover
+{
+    box-shadow:0px 3px 65px 0px rgb(255, 189, 165);
+}
+.product .product_container .item
+{
+    background-color: black;
+    opacity: 0.9px;
+    border-radius: 80px;
+}
+.product .product_container .item .item_content h3
+{
+    font-size: 25px;
+    line-height: 2px;
+    color: rgb(79, 255, 88);
+    font-weight: bolder;
+    text-align: center;
+}
+.product .product_container .item .item_img{
+    height: 58%;
+}
+.product
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.mt-4{
+    text-align: center;
+    font-size: 12px;
+}
+i{
+    font-size: 40px;
+}
+i{
+    padding: 10px;
+    border-radius: 50%;
+}
+/*--------------------------------------------CATERING---------------------------------------*/
+
+.item{
+    color: yellow;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: auto; /* You can adjust the size as per your preference */
+    margin: 10px;
+    max-height: 300px;
+    
+  }
