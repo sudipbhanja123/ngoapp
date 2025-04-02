@@ -1,10 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import pro1 from "../assets/images/pro1.svg";
 import elder from "../assets/images/elder.jpg";
 import hospital from "../assets/images/hospital.png";
 import side from "../assets/images/side.jpg";
 import { Link } from "react-router-dom";
+import HowToHelp from "./HowToHelp";
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
         <div className="btn mt-8">
           <Link
             href="/donate"
-            className="bg-blue-500 !text-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
+            className="bg-blue-500 !text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
           >
             GIVE NOW
           </Link>
@@ -53,12 +53,12 @@ const Home = () => {
             that God has for them.
           </p>
           <div className="side_btn mt-8">
-            <a
-              href="/donate"
-              className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
+            <Link
+              to="/donate"
+              className="bg-blue-500 !text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
             >
               JOIN US TODAY
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -85,12 +85,12 @@ const Home = () => {
             we can be the change that the world needs.
           </p>
           <div className="side_btn mt-8">
-            <a
-              href="/donate"
-              className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
+            <Link
+              to="/donate"
+              className="bg-blue-500 !text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
             >
               GIVE TODAY
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -120,65 +120,18 @@ const Home = () => {
             </b>
           </p>
           <div className="side_btn mt-8">
-            <a
-              href="/donate"
-              className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
+            <Link
+              to="/donate"
+              className="bg-blue-500 !text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
             >
               Donate NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* How We Help Section */}
-      <div className="product bg-blue-100 py-12 md:py-16">
-        <h2 className="text-3xl text-center font-bold">
-          <span style={{ color: "black" }}>HOW WE HELP</span>
-        </h2>
-        <div className="product_container mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="item">
-            <div className="item_img">
-              <img className="pro" src={pro1} alt="Pure Food & Water" />
-            </div>
-            <div className="item_content mt-4 text-center md:text-left">
-              <h3 className="text-xl font-semibold">Pure Food & Water</h3>
-              <p className="mt-4">
-                We supply needy children with basic necessities like pure food
-                and water
-              </p>
-            </div>
-          </div>
-
-          <div className="item">
-            <div className="item_img">
-              <img
-                className="pro"
-                src="images/pro2.svg"
-                alt="Health and Medicine"
-              />
-            </div>
-            <div className="item_content mt-4 text-center md:text-left">
-              <h3 className="text-xl font-semibold">Health and Medicine</h3>
-              <p className="mt-4">
-                Health being the foremost priority, we aim at giving children
-                every medical support
-              </p>
-            </div>
-          </div>
-
-          <div className="item">
-            <div className="item_img">
-              <img className="pro" src="images/pro3.svg" alt="Education" />
-            </div>
-            <div className="item_content mt-4 text-center md:text-left">
-              <h3 className="text-xl font-semibold">Education</h3>
-              <p className="mt-4">
-                We provide education facilities to children all over the world
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HowToHelp />
     </div>
   );
 };

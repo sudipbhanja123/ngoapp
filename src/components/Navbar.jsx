@@ -18,27 +18,27 @@ const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto">
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <Link to="/" className="block py-2 pl-3 pr-4">
+              <Link to="/" className="block py-2 pl-3 pr-4 text-xl">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="block py-2 pl-3 pr-4">
+              <Link to="/about" className="block py-2 pl-3 pr-4 text-xl">
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/donate" className="block py-2 pl-3 pr-4">
+              <Link to="/donate" className="block py-2 pl-3 pr-4 text-xl">
                 Donate
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="block py-2 pl-3 pr-4">
+              <Link to="/gallery" className="block py-2 pl-3 pr-4 text-xl">
                 Gallery
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="block py-2 pl-3 pr-4">
+              <Link to="/contact" className="block py-2 pl-3 pr-4 text-xl">
                 Contact
               </Link>
             </li>

@@ -85,8 +85,8 @@ body
 .main_about{
     background-image: url("assets/images/about.jpg");
 }
-footer{
-    background-image: url("images/about_back.jpg");
+.footer{
+    background-image: url("assets/images/about_back.jpg");
 }
 footer a{
     color: white;

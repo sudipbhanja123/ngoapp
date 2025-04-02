@@ -1,16 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import caring_crowd from "../assets/images/Caring Crowd.png";
 const Footer = () => {
   return (
-    <footer className="bg-blue-100 py-8 md:py-12">
+    <footer className="bg-blue-100 py-8 md:py-12 footer">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 md:px-12">
         <div className="pages">
           <a href="index.html">
-            <img
-              className="aimg w-40"
-              src="images/Caring Crowd.png"
-              alt="Logo"
-            />
+            <img className="aimg w-40" src={caring_crowd} alt="Logo" />
           </a>
           <p className="mt-4">
             Caring Crowd cares for needy children by empowering their caregivers
@@ -20,18 +17,18 @@ const Footer = () => {
         </div>
         <div className="doc">
           <h3 className="font-bold text-lg">Navigation</h3>
-          <a href="/" className="block my-2">
+          <Link to="/" className="block my-2">
             Home
-          </a>
-          <a href="/about" className="block my-2">
+          </Link>
+          <Link to="/about" className="block my-2">
             About
-          </a>
-          <a href="/donate" className="block my-2">
+          </Link>
+          <Link to="/donate" className="block my-2">
             Donate
-          </a>
-          <a href="/contact" className="block my-2">
+          </Link>
+          <Link to="/contact" className="block my-2">
             Contact
-          </a>
+          </Link>
         </div>
         <div className="contact">
           <h3 className="font-bold text-lg">Contact Us</h3>
@@ -43,12 +40,12 @@ const Footer = () => {
           <h3 className="font-bold text-lg">Support</h3>
           <p>Help us shape a better future for children all over the world</p>
           <div className="side_btn mt-4">
-            <a
-              href="/donate"
+            <Link
+              to="/donate"
               className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600"
             >
               JOIN US TODAY
-            </a>
+            </Link>
           </div>
         </div>
       </div>

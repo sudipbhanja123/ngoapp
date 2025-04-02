@@ -2,30 +2,59 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
+  const MapStyle = {
+    width: "100%",
+    height: 500,
+  };
   return (
-    <div className="contact_container pt-16 md:pt-32">
+    <div className="contact_container pt-16 md:pt-32 py-5">
       <Helmet>
         <title>Caring Crowd | Contact</title>
         <meta name="description" content="Get in touch with Caring Crowd." />
       </Helmet>
       <h2 className="text-3xl text-center font-bold">CONTACT US</h2>
-      {/* <div class="g_map mt-8">
+      <div class="g_map mt-8">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.483625506544!2d81.0342308!3d21.0932766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2945ab2194c349%3A0xcebf0abdd0677323!2sGaushala%20Rd%2C%20Rajnandgaon%2C%20Chhattisgarh%20491441!5e0!3m2!1sen!2sin!4v1690356247937!5m2!1sen!2sin"
-          width="100%"
-          height="600"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div> */}
-      <p>
-        We want to hear from you! Drop us a note and someone from our team will
-        get back to you.
-      </p>
-      <p className="font-bold mt-4">Call: +91 9876543210</p>
-      <p className="font-bold mt-4">Mail: caringcrowd@email.com</p>
+          src="https://maps.google.com/maps?q=TCS+Gitanjali+Park&z=10&output=embed"
+          width={MapStyle.width}
+          height={MapStyle.height}
+          frameBorder="0"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex="0"
+          title="Humanity First Indonesia"
+        />
+        {/* <div style="position: relative;">
+          <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+            <iframe
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+              loading="lazy"
+              allowfullscreen
+              src="https://maps.google.com/maps?q=TCS+Gitanjali+Park&z=10&output=embed"
+            ></iframe>
+          </div>
+          <a
+            href="https://mapembeds.com"
+            rel="noopener"
+            target="_blank"
+            style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;"
+          >
+            mapembeds.com
+          </a>
+        </div> */}
+      </div>
+      <div className="w-[70%] text-center ml-auto mr-auto py-5">
+        <p>
+          We want to hear from you! Drop us a note and someone from our team
+          will get back to you. Looking to volunteer or support us in any other
+          ways? Call +91 6294136450 Have a question that involves Caring Crowd?
+          Please head on over to our Locations page to reach our locations.
+        </p>
+
+        <p className="font-bold mt-4">Call: +91 6294136450</p>
+        <p className="font-bold mt-4">Mail: caringcrowd@email.com</p>
+      </div>
     </div>
   );
 };
